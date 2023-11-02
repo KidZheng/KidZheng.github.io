@@ -1,159 +1,133 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-800887QX4X"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-800887QX4X');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-800887QX4X');
     </script>
 
-
-    <title>Tong Zheng|Homepage</title>
-
-    <!-- Meta tags -->
+    <title>Tong Zheng | Homepage</title>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom Styles -->
     <style>
-    body {
+        /* General Styles */
+        body {
             font-family: Roboto, 'sans-serif';
-            font-size: 16px; /* Reduced from 16px */
+            font-size: 14px; /* Adjusted font size */
             background-color: #FFFFFF;
             color: #4F6071;
         }
 
+        /* Header Styles */
+        #header {
+            background-color: #f4f4f4;
+            padding: 30px 0; /* Adjusted padding */
+        }
+        #portrait {
+            border: 3px solid white;
+        }
+        #header-text-name {
+            font-size: 3rem; /* Adjusted font size */
+        }
+        #header-text-email {
+            font-size: 1.25rem; /* Adjusted font size */
+            font-style: italic;
+        }
+
+        /* Section Heading Styles */
         h1 {
             font-weight: 300;
-            font-size: 2rem; /* Reduced from 2rem */
-            margin-bottom: 0.5rem; /* Add some space below the heading */
+            font-size: 1.75rem; /* Adjusted font size */
+            margin-bottom: 0.5rem;
         }
 
+        /* News and Publications Styles */
+        .news-date, .paper-title, .paper-authors {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .paper-title {
             font-weight: bold;
-            font-size: 1.25rem; /* Adjusted font size */
-            margin-bottom: 0.25rem; /* Space below the title */
+            font-size: 1.25rem;
         }
-
         .paper-desc {
-            font-size: 0.9rem; /* Adjusted font size */
-            color: #777; /* A lighter color for less important information */
-            margin-bottom: 0.25rem; /* Space below the description */
+            font-size: 0.9rem;
+            color: #777;
         }
-
         .paper-authors {
             font-style: italic;
-            font-size: 0.85rem; /* Adjusted font size */
-            color: #555; /* A different color for authors to distinguish them */
+            font-size: 0.85rem;
+            color: #555;
         }
-
         .vspace-top {
-            margin-top: 20px; /* Adjusted spacing */
+            margin-top: 20px;
         }
-    #header {
-        background-color: #f4f4f4;
-        display: flex;
-        align-items: flex-end;
-        padding-top: 30px; /* Reduced padding */
-        padding-bottom: 30px; /* Reduced padding */
-    }
-    #footer {
-        background-color: #FFFFFF;
-        padding: 30px; /* Reduced padding */
-    }
-    .container {
-        width: 100%; /* Set the container width to 100% */
-    }
-	
-    #portrait {
-        border: 3px solid white;
-    }
-    #header-text {
-        margin-top: 30px; /* Reduced margin */
-        margin-left: 100px; /* Reduced margin */
-    }
-    #header-text-name {
-        font-size: 40px;
-    }
-    #header-text-email {
-        font-size: 20px;
-        font-style: italic;
-    }
-    .header-text-desc {
-        font-size: 20px;
-    }
-    .vspace-top {
-        margin-top: 15px; /* Reduced margin */
-    }
-    .vspace-top-news {
-        margin-top: 7px; /* Reduced margin */
-    }
-    .paper-image {
-        width: 150px;
-    }
-    .news-date {
-        font-weight: bold;
-    }
-    .paper-title {
-        font-weight: bold;
-    }
-    .paper-authors {
-        font-style: italic;
-    }
-    .news-date {
-        white-space: nowrap; /* Prevents the text from wrapping */
-        overflow: hidden; /* Ensures the content doesn't overflow the column */
-        text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
-        font-size: 16px; /* Optionally reduce the font size */
-    }
-</style>
+        .vspace-top-news {
+            margin-top: 10px;
+        }
 
+        /* Footer Styles */
+        #footer {
+            background-color: #FFFFFF;
+            padding: 30px;
+            text-align: center; /* Centered footer text */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header-text-name {
+                font-size: 2.5rem; /* Smaller font size for mobile */
+            }
+            #header-text-email {
+                font-size: 1rem; /* Smaller font size for mobile */
+            }
+            .paper-title, .paper-authors {
+                white-space: normal; /* Allow wrapping on smaller screens */
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <!-- Header Section -->
     <div id='header'>
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-3 offset-sm-1">
                     <img src='imgs/TongZheng.jpg' width="240" class='img-fluid' id='portrait'>
                 </div>
-
                 <div class="col">
-                  <div id='header-text-name'>
-                      Tong Zheng
-                  </div>
-                  <div id='header-text-email'>
-                    zhengtong12356 (at) gmail (dot) com
-                  </div>
-                  <div>
-                    <a href="https://github.com/zhengkid">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=EdJ9N0oAAAAJ">[Google Scholar]</a>
-                    <a href="docs/CV_Zhengtong_NEU.pdf">[Download CV]</a>
-
-		    
-                  </div>
-
+                    <div id='header-text-name'>Tong Zheng</div>
+                    <div id='header-text-email'>zhengtong12356 (at) gmail (dot) com</div>
+                    <div>
+                        <a href="https://github.com/zhengkid">[GitHub]</a>
+                        <a href="https://scholar.google.com/citations?hl=zh-CN&user=EdJ9N0oAAAAJ">[Google Scholar]</a>
+                        <a href="docs/CV_Zhengtong_NEU.pdf">[Download CV]</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <!-- Main Content Section -->
     <div class='container'>
+        <!-- About Me Section -->
         <div class='row vspace-top'>
             <div class='col offset-sm-1'>
                 <h1>About Me</h1>
                 <p>
-                    Currently, I worked as a research assistant at Natural Language Processing Laborary of Northeastern University (China), supervised by <a href="https://www.nlplab.com/members/xiaotong.html">Prof. Tong Xiao</a>. Before that, I received my B.S degree from the Northeastern University of Computer Science and Engineering in 2021. My current research interests include Efficient & Foundation AI, Making LLMs more Accessible and Applications of LLMs to Machine Translation. <span style="color: #FF0000;">I am currently looking for 24 Fall Phd Positions! </span>
+                    Currently, I work as a research assistant at the Natural Language Processing Laboratory of Northeastern University (China), supervised by <a href="https://www.nlplab.com/members/xiaotong.html">Prof. Tong Xiao</a>. Before that, I received my B.S degree from the Northeastern University of Computer Science and Engineering in 2021. My current research interests include Efficient & Foundation AI, Making LLMs more Accessible, and Applications of LLMs to Machine Translation. <span style="color: #FF0000;">I am currently looking for 24 Fall Phd Positions!</span>
                 </p>
+            </div>
+        </div>
 
                 <div class='vspace-top'>
                     <h1>News</h1>
