@@ -21,7 +21,7 @@
         /* General Styles */
         body {
             font-family: Roboto, 'sans-serif';
-            font-size: 14px;
+            font-size: 16px;
             background-color: #FFFFFF;
             color: #4F6071;
         }
@@ -29,24 +29,36 @@
         /* Header Styles */
         #header {
             background-color: #f4f4f4;
-            padding: 30px 0;
+            /*background-color: #FFFFFF;*/
+            display: flex;
+            align-items: flex-end;
+            padding-top:60px;
+            padding-bottom:60px;
         }
         #portrait {
             border: 3px solid white;
-        }
-        #header-text-name {
-            font-size: 3rem;
-        }
+          }
+          #header-text {
+            margin-top: 60px;
+            margin-left: 220px;
+          }
+          #header-text-name {
+            font-size: 40px;
+          }
+          #header-text-title {
+              font-size: 17px;
+          }
+        
         #header-text-email {
-            font-size: 1.25rem;
+            margin-top: 10px;
+            font-size: 17px;
             font-style: italic;
-        }
+          }
 
         /* Section Heading Styles */
         h1 {
             font-weight: 300;
-            font-size: 1.75rem;
-            margin-bottom: 0.5rem;
+            font-size: 2rem;
         }
 
         /* News and Publications Styles */
@@ -68,28 +80,26 @@
             font-size: 0.85rem;
             color: #555;
         }
-        .vspace-top {
-            margin-top: 20px;
-        }
-        .vspace-top-news {
-            margin-top: 10px;
-        }
+        
+
+        .header-text-desc {
+            font-size: 20px;
+          }
+          .vspace-top {
+            margin-top: 30px;
+          }
+          .vspace-top-news {
+              margin-top: 15px;
+          }
 
         /* Footer Styles */
         #footer {
             background-color: #FFFFFF;
-            padding: 30px;
-            text-align: center;
+            padding:60px;
         }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            #header-text-name {
-                font-size: 2.5rem;
-            }
-            #header-text-email {
-                font-size: 1rem;
-            }
             .paper-title, .paper-authors, .paper-desc {
                 white-space: normal;
             }
