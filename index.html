@@ -94,6 +94,12 @@
     .paper-authors {
         font-style: italic;
     }
+    .news-date {
+        white-space: nowrap; /* Prevents the text from wrapping */
+        overflow: hidden; /* Ensures the content doesn't overflow the column */
+        text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
+        font-size: 0.9em; /* Optionally reduce the font size */
+    }
 </style>
 
 </head>
@@ -139,15 +145,15 @@
                     <h1>News</h1>
                 </div>
 
-
 		<div class='row vspace-top-news'>
-                    <div class="col-sm-2 news-date">
-                        Oct. 24 2023
-                    </div>
-                    <div class="col">
-                        I begin search for potential 24Fall PhD positions.
-                    </div>
-                </div>
+    <div class="col-md-2 news-date"> <!-- Changed to col-md-2 for more space on medium-sized screens -->
+        Oct. 24 2023
+    </div>
+    <div class="col-md-10"> <!-- Adjust the second column accordingly -->
+        I begin search for potential 24Fall PhD positions.
+    </div>
+</div>
+		
 
 
 		<div class='row vspace-top-news'>
