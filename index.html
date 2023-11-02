@@ -17,11 +17,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
+        <!-- Custom Styles -->
     <style>
         /* General Styles */
         body {
             font-family: Roboto, 'sans-serif';
-            font-size: 14px; /* Adjusted font size */
+            font-size: 14px;
             background-color: #FFFFFF;
             color: #4F6071;
         }
@@ -29,24 +30,25 @@
         /* Header Styles */
         #header {
             background-color: #f4f4f4;
-            padding: 30px 0; /* Adjusted padding */
+            padding: 30px 0;
         }
         #portrait {
             border: 3px solid white;
         }
         #header-text-name {
-            font-size: 3rem; /* Adjusted font size */
+            font-size: 3rem;
         }
         #header-text-email {
-            font-size: 1.25rem; /* Adjusted font size */
+            font-size: 1.25rem;
             font-style: italic;
         }
 
         /* Section Heading Styles */
         h1 {
             font-weight: 300;
-            font-size: 1.75rem; /* Adjusted font size */
+            font-size: 1.75rem;
             margin-bottom: 0.5rem;
+            padding-left: 15px; /* Ensure alignment with other sections */
         }
 
         /* News and Publications Styles */
@@ -58,15 +60,18 @@
         .paper-title {
             font-weight: bold;
             font-size: 1.25rem;
+            padding-left: 15px; /* Ensure alignment with section heading */
         }
         .paper-desc {
             font-size: 0.9rem;
             color: #777;
+            padding-left: 15px; /* Ensure alignment */
         }
         .paper-authors {
             font-style: italic;
             font-size: 0.85rem;
             color: #555;
+            padding-left: 15px; /* Ensure alignment */
         }
         .vspace-top {
             margin-top: 20px;
@@ -74,27 +79,27 @@
         .vspace-top-news {
             margin-top: 10px;
         }
-        .custom-indent {
-    padding-left: 30px; /* Adjust the value as needed */
-}
 
         /* Footer Styles */
         #footer {
             background-color: #FFFFFF;
             padding: 30px;
-            text-align: center; /* Centered footer text */
+            text-align: center;
         }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
             #header-text-name {
-                font-size: 2.5rem; /* Smaller font size for mobile */
+                font-size: 2.5rem;
             }
             #header-text-email {
-                font-size: 1rem; /* Smaller font size for mobile */
+                font-size: 1rem;
             }
             .paper-title, .paper-authors {
-                white-space: normal; /* Allow wrapping on smaller screens */
+                white-space: normal;
+            }
+            h1, .paper-title, .paper-desc, .paper-authors {
+                padding-left: 10px; /* Adjust for smaller screens */
             }
         }
     </style>
@@ -167,7 +172,7 @@
 
         <!-- Publications Section -->
         <div class='row vspace-top'>
-    <div class='col custom-indent'>
+            <div class='col offset-sm-1'>
         <h1>Publications (* Equal Contribution)</h1>
             <div class='row vspace-top'>
                 <div class="col">
