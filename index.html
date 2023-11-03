@@ -145,6 +145,31 @@
     background-repeat: repeat;
     background-size: 200% auto;
 }
+
+
+/* Marquee styles */
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px; /* Adjust as needed */
+    text-align: center;
+    /* Make it as long as the longest text you need to scroll */
+    animation: marquee 10s linear infinite;
+}
+
+/* Marquee keyframes */
+@keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
     </style>
 </head>
 <body>
@@ -344,11 +369,10 @@
 
 
     <div id='footer' class='vspace-top'>
-    <div class="scrolling-container">
-        <div class="scrolling-text">Life's a journey, not a race; a wilderness to be explored, not a track to be scored.</div>
-        <div class="scrolling-text">Life's a journey, not a race; a wilderness to be explored, not a track to be scored.</div>
-    </div>
     <!-- ... other footer content ... -->
+    <div class="marquee">
+        <p>Life's a journey, not a race; a wilderness to be explored, not a track to be scored.</p>
+    </div>
 </div>
 
     <div id='footer' class='vspace-top'>
