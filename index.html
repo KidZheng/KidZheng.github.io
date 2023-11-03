@@ -31,7 +31,7 @@
             background-color: #f4f4f4;
             /*background-color: #FFFFFF;*/
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             padding-top:60px;
             padding-bottom:60px;
         }
@@ -109,13 +109,12 @@
 <body>
     <!-- Header Section -->
     <div id='header'>
-    <div class='container'>
-        <div class='row align-items-center'> <!-- Added align-items-center -->
-            <div class="col-sm-3 offset-sm-1">
-                <img src='imgs/TongZheng.jpg' width="240" class='img-fluid' id='portrait'>
-            </div>
-            <div class="col-sm-8"> <!-- Adjusted for Bootstrap grid system -->
-                <div id='header-text'>
+        <div class='container'>
+            <div class='row'>
+                <div class="col-sm-3 offset-sm-1">
+                    <img src='imgs/TongZheng.jpg' width="240" class='img-fluid' id='portrait'>
+                </div>
+                <div class="col">
                     <div id='header-text-name'>Tong Zheng (郑童)</div>
                     <div id='header-text-email'>zhengtong12356 (at) gmail (dot) com</div>
                     <div>
@@ -125,7 +124,6 @@
             </div>
         </div>
     </div>
-</div>
 
     <div class='container'>
         <!-- About Me Section -->
@@ -313,4 +311,3 @@
 </body>
 
 </html>
-
