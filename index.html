@@ -20,6 +20,21 @@
 
     <!-- Custom Styles -->
     <style>
+    @keyframes fire {
+        0% { color: red; }
+        25% { color: orange; }
+        50% { color: yellow; }
+        75% { color: orange; }
+        100% { color: red; }
+    }
+    .fire-text {
+        font-size: 20px;
+        font-weight: bold;
+        animation: fire 1s infinite alternate;
+    }
+</style>
+
+    <style>
         /* General Styles */
         body {
             font-family: Roboto, 'sans-serif';
@@ -313,7 +328,7 @@
             <div class='row vspace-top'>
                 <div class="col">
                     <div class='paper-title'>
-                        Asymmetric Conflict and Synergy in Post-training for LLM-based Multilingual Machine Translation <a href="https://arxiv.org/abs/2502.11223">[paper]</a>
+                        <span class="fire-text">🔥 Asymmetric Conflict and Synergy in Post-training for LLM-based Multilingual Machine Translation 🔥</span> <a href="https://arxiv.org/abs/2502.11223">[paper]</a>
                     </div>
                     <div class='paper-desc'>
                         Arxiv, 2025
